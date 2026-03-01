@@ -1,7 +1,10 @@
+import Image from "next/image";
+
 const skills = [
   "Java 11",
   "Spring Boot",
   "Project Reactor",
+  "Spring Cloud",
   "Kubernetes",
   "Azure",
   "Redis",
@@ -10,6 +13,7 @@ const skills = [
   "CI/CD",
   "Grafana",
   "Elasticsearch",
+  "Secure API Design",
   "Android SDK",
 ];
 
@@ -65,7 +69,7 @@ export default function HomePage() {
 
   return (
     <div className="page">
-      <header className="topbar container">
+      <header className="topbar container fadeIn">
         <div className="logo">AV.</div>
         <nav>
           <a href="#about">About</a>
@@ -76,7 +80,7 @@ export default function HomePage() {
       </header>
 
       <section className="hero container" id="about">
-        <div className="heroLeft">
+        <div className="heroLeft slideUp delay1">
           <p className="status">Open to Senior Backend Engineering roles</p>
           <h1>
             Building resilient,
@@ -87,12 +91,24 @@ export default function HomePage() {
             I’m Ankit Verma, a Senior Java Backend Engineer with 9+ years of experience shipping
             cloud-native microservices and Android platforms across automotive and mobile domains.
           </p>
+
           <div className="ctaRow">
             <a className="btn primary" href="mailto:vermaankit.2005@gmail.com">
               Let&apos;s Talk
             </a>
-            <a className="btn ghost" href="tel:+4915218728039">
-              +49 1521 8728039
+            <a className="btn ghost" href="/Ankit-Verma-Resume.pdf" target="_blank" rel="noreferrer">
+              Download Resume
+            </a>
+          </div>
+
+          <div className="socialRow" id="contact">
+            <a href="mailto:vermaankit.2005@gmail.com">Email</a>
+            <a href="tel:+4915218728039">Phone</a>
+            <a href="https://www.linkedin.com/in/vermaankit2005/" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+            <a href="https://github.com/vermaankit2005" target="_blank" rel="noreferrer">
+              GitHub
             </a>
           </div>
 
@@ -112,29 +128,17 @@ export default function HomePage() {
           </div>
         </div>
 
-        <aside className="heroCard" id="contact">
-          <div className="portrait">AV</div>
+        <aside className="heroCard slideUp delay2">
+          <div className="imageFrame">
+            <Image src="/profile.jpg" alt="Ankit Verma" width={680} height={960} priority />
+          </div>
           <h2>Ankit Verma</h2>
           <p>Senior Java Backend Engineer · Cologne, Germany</p>
-          <ul>
-            <li>
-              <span>Email</span>
-              <a href="mailto:vermaankit.2005@gmail.com">vermaankit.2005@gmail.com</a>
-            </li>
-            <li>
-              <span>Phone</span>
-              <a href="tel:+4915218728039">+49 1521 8728039</a>
-            </li>
-            <li>
-              <span>LinkedIn</span>
-              <a href="#">Add your profile URL</a>
-            </li>
-          </ul>
         </aside>
       </section>
 
       <main className="container main">
-        <section className="panel" id="experience">
+        <section className="panel slideUp delay2" id="experience">
           <div className="sectionHead">
             <p>Experience</p>
             <h2>Career Highlights</h2>
@@ -161,7 +165,7 @@ export default function HomePage() {
         </section>
 
         <section className="splitRow" id="skills">
-          <article className="panel compact">
+          <article className="panel compact slideUp delay3">
             <div className="sectionHead">
               <p>Technical Stack</p>
               <h2>Core Skills</h2>
@@ -173,7 +177,7 @@ export default function HomePage() {
             </div>
           </article>
 
-          <article className="panel compact">
+          <article className="panel compact slideUp delay3">
             <div className="sectionHead">
               <p>Education & Credentials</p>
               <h2>Qualifications</h2>
