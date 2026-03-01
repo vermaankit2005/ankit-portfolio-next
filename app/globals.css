@@ -1,0 +1,191 @@
+:root {
+  --bg: #0b1020;
+  --panel: #111937;
+  --panel-2: #0f1732;
+  --text: #e9eeff;
+  --muted: #aeb8dd;
+  --brand: #7aa2ff;
+  --line: #24315f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: linear-gradient(180deg, #090f1f 0%, #0d1530 100%);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  width: min(1040px, 92vw);
+  margin: 0 auto;
+}
+
+.hero {
+  border-bottom: 1px solid var(--line);
+  padding: 4.2rem 0 3rem;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.eyebrow {
+  color: var(--brand);
+  margin: 0 0 0.6rem;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: clamp(2.1rem, 4vw, 3rem);
+  line-height: 1.1;
+  margin: 0;
+}
+
+.subtitle {
+  color: var(--muted);
+  max-width: 62ch;
+  margin: 1rem 0 0;
+}
+
+.actions {
+  margin-top: 1.4rem;
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 12px;
+  padding: 0.72rem 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.btnPrimary {
+  background: var(--brand);
+  color: #091334;
+}
+
+.btnGhost {
+  border: 1px solid var(--line);
+  color: var(--text);
+  background: transparent;
+}
+
+.contactCard {
+  background: radial-gradient(120% 120% at 0% 0%, #1b2752 0%, var(--panel) 70%);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.05rem 1.1rem;
+}
+
+.contactCard p {
+  margin: 0.45rem 0;
+  color: var(--muted);
+}
+
+.contactCard strong,
+.contactCard a {
+  color: var(--text);
+}
+
+.main {
+  padding: 2rem 0 3.2rem;
+}
+
+section {
+  margin-top: 2rem;
+  background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.2rem 1.3rem;
+}
+
+h2 {
+  margin: 0 0 0.8rem;
+  font-size: 1.15rem;
+}
+
+p,
+li {
+  color: var(--muted);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.chips span {
+  border: 1px solid var(--line);
+  background: #0c1430;
+  border-radius: 999px;
+  padding: 0.32rem 0.68rem;
+  color: #d8e1ff;
+  font-size: 0.88rem;
+}
+
+.role + .role {
+  margin-top: 1rem;
+  border-top: 1px dashed var(--line);
+  padding-top: 1rem;
+}
+
+.roleHead h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.roleHead p {
+  margin: 0.2rem 0 0.7rem;
+  font-size: 0.92rem;
+}
+
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 1rem 0 1.6rem;
+}
+
+.footerWrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footerWrap p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #98a7dd;
+}
+
+@media (max-width: 860px) {
+  .heroGrid,
+  .twoCol {
+    grid-template-columns: 1fr;
+  }
+}
