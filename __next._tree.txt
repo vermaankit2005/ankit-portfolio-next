@@ -1,0 +1,2 @@
+:HL["/ankit-portfolio-next/_next/static/chunks/35eb28436b0c74ee.css","style"]
+0:{"buildId":"U6Gn4kNaXUDojxwjnK57M","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
